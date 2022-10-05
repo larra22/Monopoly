@@ -53,7 +53,7 @@ public class GameBoardUtil {
 		Dimension d = calculateDimension(board.getCellNumber());
 		int longSide = d.width;
 		int shortSide = d.height;
-		List cells = new ArrayList();
+		List<Cell> cells = new ArrayList();
 		for(int i = longSide + 1 + shortSide; i > longSide + 1; i--) {
 			cells.add(board.getCell(i));
 		}
